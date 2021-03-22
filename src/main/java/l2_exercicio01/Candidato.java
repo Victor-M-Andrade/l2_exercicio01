@@ -10,6 +10,7 @@ public class Candidato {
 
 	private int id;
 	private String nome;
+	private int numeroDeVotos;
 
 	public int getId() {
 		return id;
@@ -18,5 +19,15 @@ public class Candidato {
 	public String getNome() {
 		return nome;
 	}
+
+	public int getNumeroDeVotos() {
+		return numeroDeVotos;
+	}
+	
+	
+	public void adicionarVoto() {
+		this.numeroDeVotos += 1;
+	}
+
 
 }
